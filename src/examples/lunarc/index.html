@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="icon" href="data:,">
-        <title>// CASA EN LA COLINA</title>
+        <title>LUNARC SPACE RESIDENCY</title>
         <style>
             body {
                 margin: 0;
@@ -13,12 +13,16 @@
             input[type=range] { width: 100%; }
             #container { position: relative; }
             #container canvas, #overlay { position: absolute; }
+            
+            h1 {font: size 200px; color: #f3f3f3;}
+            h2 {color: rgb(255, 255, 255);}
+            label {color: #f3f3f3;}
 /*///////////////////////////////////////////////////////////////////////////*/
             #overlay {
               z-index: 1;
-              width: 250px;
+              width: 300px;
               height: 100vh;
-              background-color: rgba(0,0,0,0.1);
+              background-color: rgb(0, 0, 0);
             }
             #overlay div { padding: 5px 10px; }
 /*///////////////////////////////////////////////////////////////////////////*/
@@ -34,6 +38,13 @@
                 left: 50%;
                 z-index: 2;
             }
+            .gap {
+                height: 200px;
+                padding: 200px;
+                text-align: center;
+                background: rgba(0,0,0,0.1);
+                color: rgb(255, 255, 255);
+            }
             @keyframes spin {
                 0% { transform: rotate(0deg); }
                 100% { transform: rotate(360deg); }
@@ -45,14 +56,25 @@
         <div id="container">
             <div id="overlay">
 <!-- /////////////////////////////////////////////////////////////////////////// -->
-                <div><h2>// HILL HOUSE</h2></div>
+                <div><h1>// LUNARC SPACE RESIDENCY</h2></div>
+                <div><h2>Set up your future space community in the moon</h2></div>
                 <div>
-                  <label for="RH_IN:X_POSITION">X POSITION</label>
-                  <input type="range" id="X_POSITION" min="0" max="150" value="50" step="1">
-                  <label for="RH_IN:X_POSITION">Y POSITION</label>
-                  <input type="range" id="Y_POSITION" min="0" max="150" value="50" step="1">
+                  <label for="X_POSITION">X</label>
+                  <input type="range" id="X_POSITION" min="30" max="130" value="50" step="1">
+                  <label for="X_POSITION">Y</label>
+                  <input type="range" id="X_POSITION" min="30" max="190" value="70" step="1">
+                  <label for="STRENGTH">STRENGTH</label>
+                  <input type="range" id="STRENGTH" min="0" max="30" value="15" step="1">
+                  <label for="SEED">SEED</label>
+                  <input type="range" id="SEED" min="1" max="30" value="15" step="1">
+                  <label for="LEGEND">LEGEND</label>
+                  <input type="range" id="LEGEND" min="1" max="25" value="22" step="1">
                 </div>
                 <div><button id="downloadButton" disabled>Download</button></div>
+                <div class="gap"></div>
+                
+                
+                <li><a href="../index.html">MAIN PAGE</a></li>
                 <!-- <div><a href="_Bending_gridshell.gh" download="_Bending_gridshell.gh.html">Save source code</a></div> -->
 <!-- /////////////////////////////////////////////////////////////////////////// -->
             </div>
@@ -70,7 +92,7 @@ loader.setLibraryPath( 'https://cdn.jsdelivr.net/npm/rhino3dm@0.15.0-beta/' )
 
 // initialise 'data' object that will be used by compute()
 const data = {
-  definition: 'test.gh',
+  definition: 'lunarc.gh',
   inputs: getInputs()
 }
 
