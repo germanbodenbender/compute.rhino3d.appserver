@@ -7,43 +7,85 @@
         <meta charset="utf-8">
         <title>MACAD + BIMSC  //  DATA MANAGEMENT</title>
         <style>
-            body { font-family: Arial, Helvetica, sans-serif; }
+            body { font-family: Arial, Helvetica, sans-serif; background: #ffffff; }
             table { border: none; border-collapse: collapse; }
             table td {
-                border-left: 1px solid white;
+                border-left: 0px solid white;
                 padding: 10px;
             }
             table td:first-child { border-left: none; }
             .heading:hover {
                 color: red;
             }
+            #container { position: relative; }
+            #container canvas, #overlay { position: absolute; }
+            /*#overlay {
+              z-index: 1;
+              width: 100%;
+              height: 200px;
+              background-color: rgba(255, 10, 10, 0.1);
+            }
+            #overlay div { padding: 5px 10px; }*/
+            .header {
+                padding: 100px;
+                text-align: center;
+                background: #000000;
+                color: rgb(255, 255, 255);
+            }
+            .side {
+                -ms-flex: 30%; /* IE10 */
+                flex: 30%;
+                background-color: #f1f1f1;
+                padding: 20px;
+                }
+
+            /* Main column */
+            .main {   
+                -ms-flex: 70%; /* IE10 */
+                flex: 70%;
+                background-color: white;
+                padding: 20px;
+            }
+
+            
+
             
         </style>
+       
     </head>
     <body>
-        <h1>Here is a series of examples that covers the principles of implementing Rhino Compute togheter with Heroku services</h1>
-        <p>These examples cover GH Documents that might have additional information, or aren't handled by the /view endpoint.</p>
+        <div class="header">
+            <h1 >IAAC-MaCad   //   SEMINAR 01</h1>
+            <p>A <b>DIGITAL TOOLS FOR CLOUD BASED DATA MANAGEMENT</p>
+        </div>
+        <div id="overlay"></div>
+            <h1 class="heading">Here is a series of examples that covers the principles of implementing Rhino Compute togheter with Heroku services</h1>
+            <p class="heading">These examples cover GH Documents that might have additional information, or aren't handled by the /view endpoint.</p>
+            <br />
+            <hr>
         <table>
             <tr>
-                <td><a href="./spikyThing/">spikyThing</a></td>
-                <td>GH definition that uses SubD components to create a spiky ball. Output is returned as a b64 Draco compressed mesh and is decompressed with rhino3dm. There is additional code in this sample that shows how to extract the timings for various aspects of the update cycle.</td>
+                <td class="heading"><a href="./spikyThing/">spikyThing</a></td>
+                <td class="heading">GH definition that uses SubD components to create a spiky ball. Output is returned as a b64 Draco compressed mesh and is decompressed with rhino3dm. There is additional code in this sample that shows how to extract the timings for various aspects of the update cycle.</td>
             </tr>
             <tr>
-                <td><a href="./delaunay/">delaunay</a></td>
-                <td>This example shows how to select points as input.</td>
+                <td class="heading"><a href="./delaunay/">delaunay</a></td>
+                <td class="heading">This example shows how to select points as input.</td>
             </tr>
             <tr>
-                <td><a href="./panels/">panels</a></td>
-                <td>This example how to use numeric output to add more information in the UI.</td>
+                <td class="heading"><a href="./panels/">panels</a></td>
+                <td class="heading">This example how to use numeric output to add more information in the UI.</td>
             </tr>
             <tr>
-                <td><a href="./kangaroo/">Lunar picnic</a></td>
-                <td>This example allows you to set up your Lunar tent using Kangaroo and Ladybug components.</td>
+                <td class="heading"><a href="./kangaroo/">Lunar picnic</a></td>
+                <td class="heading">This example allows you to set up your Lunar tent using Kangaroo and Ladybug components.</td>
             </tr>
             <tr>
-                <td><a href="./test/">Ladybug Test</a></td>
-                <td>Intital test of ladybug on rhino compute.</td>
+                <td class="heading"><a href="./test/">Ladybug Test</a></td>
+                <td class="heading">Intital test of ladybug on rhino compute.</td>
             </tr>
         </table>
+        <br />
+        <hr>
     </body>
 </html>
