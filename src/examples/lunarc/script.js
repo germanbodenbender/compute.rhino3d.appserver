@@ -9,7 +9,7 @@ import rhino3dm from 'https://cdn.jsdelivr.net/npm/rhino3dm@0.15.0-beta/rhino3dm
 const loader = new Rhino3dmLoader()
 loader.setLibraryPath( 'https://cdn.jsdelivr.net/npm/rhino3dm@0.15.0-beta/' )
 
-const definition = 'kangaroo.gh'
+const definition = 'lunarc.gh'
 
 // setup input change events
 const dimension_slider = document.getElementById( 'dimension' )
