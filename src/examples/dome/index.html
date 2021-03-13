@@ -3,22 +3,29 @@
     <head>
         <meta charset="utf-8">
         <link rel="icon" href="data:,">
-        <title>// CASA EN LA COLINA</title>
+        <title>LUNARC SPACE RESIDENCY</title>
         <style>
             body {
                 margin: 0;
                 font-family: monospace;
             }
-            canvas { width: 100%; height: 100%; }
+            canvas { width: 100%; height: 100%; background-color: rgb(255, 255, 255);}
             input[type=range] { width: 100%; }
             #container { position: relative; }
             #container canvas, #overlay { position: absolute; }
+            
+            
+            h1 {font-size: 900%; color: #f3f3f3;line-height: 0%;padding-bottom: 10%;margin-bottom: 00%;margin-top: 20%;}
+            h2 {font-size: 200%; color: rgb(255, 255, 255);line-height: 110%;padding: 0%;margin-bottom: 0%;}
+            h3 {font: size 200px; color: #bbbbbb;margin-bottom: 70%;margin-top: 0%;}
+            
+            label {color: #f3f3f3;}
 /*///////////////////////////////////////////////////////////////////////////*/
             #overlay {
               z-index: 1;
-              width: 250px;
+              width: 300px;
               height: 100vh;
-              background-color: rgba(0,0,0,0.1);
+              background-color: rgb(0, 0, 0);
             }
             #overlay div { padding: 5px 10px; }
 /*///////////////////////////////////////////////////////////////////////////*/
@@ -34,6 +41,46 @@
                 left: 50%;
                 z-index: 2;
             }
+            
+            img {
+                width: 260px; /* set image width */
+            }
+            
+            .gap {
+                height: 60px;
+                padding: 200px;
+                text-align: center;
+                background: rgba(0,0,0,0.1);
+                color: rgb(255, 255, 255);
+            }
+
+            .buttongroup {
+              border: 0px solid rgb(255, 255, 255);
+              color: rgb(255, 255, 255);
+              padding: 05px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 12px;
+              margin: 4px 2px;
+              cursor: crosshair;
+              background-color: rgb(0, 0, 0);
+              float: left;
+            }
+
+            .button1 {
+              color: rgb(255, 255, 255);
+              background-color: rgb(0, 0, 0);
+              padding: 6px 27px;
+              border: 1px solid rgb(255, 255, 255);
+            }
+
+            .button1:hover {
+              background-color: #575757;
+            }
+
+            
+
             @keyframes spin {
                 0% { transform: rotate(0deg); }
                 100% { transform: rotate(360deg); }
@@ -44,19 +91,43 @@
         <div id="loader"></div> 
         <div id="container">
             <div id="overlay">
-<!-- /////////////////////////////////////////////////////////////////////////// -->
-                <div><h2>// HILL HOUSE</h2></div>
-                <div>
+              
+              <br />
+              <br />
+              
+
+              <div><h1>01</h1></div>
+              <div><h2>LUNARC SPACE RESIDENCY</h2></div>
+              <div><h3>Set up your future modular space community in the moon and analyze its performance</h3></div>
+              <div>
                   <label for="RH_IN:X_POSITION">X POSITION</label>
                   <input type="range" id="X_POSITION" min="0" max="150" value="50" step="1">
                   <label for="RH_IN:X_POSITION">Y POSITION</label>
                   <input type="range" id="Y_POSITION" min="0" max="150" value="50" step="1">
                 </div>
-                <div><button id="downloadButton" disabled>Download</button></div>
-                <!-- <div><a href="_Bending_gridshell.gh" download="_Bending_gridshell.gh.html">Save source code</a></div> -->
-<!-- /////////////////////////////////////////////////////////////////////////// -->
-            </div>
-        </div>
+
+              
+
+                <div class="buttongroup">
+                  <a href="../index.html" >
+                    <button class="button1">MAIN PAGE</button></a>
+                  <button class="button1" id="downloadButton" >DOWNLOAD</button>
+                </div>
+  
+                
+                <div class="gap"></div>
+  
+                <img id="iaac"
+                alt="iaac logo"
+                title="iaac logo"
+                src="https://i.ibb.co/N6ZpWyP/IAAC-LOGO-WHITE.png"
+                style="vertical-align:middle;margin:0px 20px"
+                >
+  
+                  
+                  
+              </div>
+          </div>
 
         <script type="module">
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.126.0/build/three.module.js'
@@ -70,7 +141,7 @@ loader.setLibraryPath( 'https://cdn.jsdelivr.net/npm/rhino3dm@0.15.0-beta/' )
 
 // initialise 'data' object that will be used by compute()
 const data = {
-  definition: 'test.gh',
+  definition: 'dome.gh',
   inputs: getInputs()
 }
 
