@@ -1,0 +1,178 @@
+<!-- IAAC MACAD - SEMINAR 02: DIGITAL TOOLS FOR CLOUD BASED DATA MANAGEMENT-->
+<!-- Created by German Otto Bodenbender -->
+<!-- FINAL ASSIGNMENT  //  2021-03-15  // -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MACAD + BIMSC  //  DATA MANAGEMENT</title>
+        <style>
+            body { 
+                font-family: monospace; 
+                background: rgba(97, 108, 131);
+                margin: 0;
+                padding: 0px;
+                color:white;
+                
+            }
+
+            h1 {font-size: 300%; color: #000000;line-height: 0%;
+                padding-bottom: 0%;
+                padding-top:386px; margin-bottom: 00%;margin-top: 0%;padding-right: 11%; position: relative;text-align: right;}
+            
+            h2 {font-size: 159%; color: #000000;line-height: 0%;padding-bottom: 0%;
+                padding-top:40px; margin-bottom: 00%;margin-top: 0%;padding-right: 11%; position: relative;text-align: right;}
+
+            h3 {font-size: 600%; color: #ffffff;line-height: 0%;padding-bottom: 20px;padding-left: 110px;margin: 0px;}
+
+            h4 {font-size: 150%; color: #ffffff;line-height: 130%;padding-bottom: 10px;padding-left: 110px;}
+
+
+            table { border-left: 100px solid rgba(97, 108, 131); border-collapse: collapse; border-spacing: 100px;font-size: 110%;}
+            table td {
+                border-left: 30px solid rgba(97, 108, 131);
+                padding: 10px;
+            }
+            table td:first-child { border-left: none; }
+            
+            .heading:hover {
+                color: rgb(0, 0, 0);
+            }
+            #container { position: relative; }
+            #container canvas, #overlay { position: absolute; }
+            
+            .overlay {
+              background-color: rgba(97, 108, 131);
+              
+            }
+            .overlay:hover{
+                color: rgb(0, 0, 0);
+            }
+
+            
+            .header {
+                height: 22cm;
+                padding: 0%;
+                background:rgb(255, 255, 255);
+                color: rgb(255, 255, 255);
+                background-image: url(/src/examples/cover-final.jpg);
+                background-repeat: no-repeat;
+                background-position-y: top;
+                background-position-x: center;
+            }
+
+            .gradient {
+                height: 10cm;
+                padding: 0%;
+                background-image: linear-gradient(rgb(255, 255, 255), rgb(97, 108, 131));
+            }
+
+            .side {
+                -ms-flex: 30%; /* IE10 */
+                flex: 30%;
+                background-color: #f1f1f1;
+                padding: 20px;
+                }
+
+            /* Main column */
+            .main {   
+                -ms-flex: 70%; /* IE10 */
+                flex: 70%;
+                background-color: white;
+                padding: 20px;
+            }
+
+            
+
+            
+        </style>
+       
+    </head>
+    <body>
+        <div class="header">
+            <h1 >IAAC-MaCad   //   SEMINAR 01</h1>
+            <h2 >DIGITAL TOOLS FOR CLOUD BASED DATA MANAGEMENT</h2>
+        </div>
+        <div class="gradient"></div>
+
+        <h3 class="overlay">01 // ASSINGMENTS</h1>
+        <h4 class="overlay">COMPILATION OF EARLY EXCERCISES THAT SHOWS THE CONCEPTS OF HTML, JAVASCRIPT <br> AND CSS IMLEMENTED ON GITHUB PAGES AS WELL AS THE USE OF THREE JS LIBRARIES </h4>
+
+        <hr>
+        </div>
+
+        <table>
+            <tr>
+                <td class="heading"><a href="./examples/gob_lunartent/">// LUNAR PICNIC</a></td>
+                <td class="heading">This example allows you to set up your Lunar tent using Kangaroo and Ladybug components.</td>
+            </tr>
+            <tr>
+                <td class="heading"><a href="./examples/gob_lunarc/">// LUNAR SPACE RESIDENCY</a></td>
+                <td class="heading">Create your lunar community using modular 3D printed components.</td>
+            </tr>
+            <tr>
+                <td class="heading"><a href="./examples/gob_tower/">// PARAMETRIC TOWER</a></td>
+                <td class="heading">Create your own version of the famous twisted tower and analyze it using radiation components</td>
+            </tr>
+            <tr>
+                <td class="heading"><a href="./examples/spikyThing/">// STRESS BALL</a></td>
+                <td class="heading">GH definition that uses SubD components to create a spiky ball. Output is returned as a b64 Draco compressed mesh and is decompressed with rhino3dm. <br> There is additional code in this sample that shows how to extract the timings for various aspects of the update cycle.</td>
+            </tr>
+            <tr>
+                <td class="heading"><a href="./examples/delaunay/">// DELAUNAY MESH</a></td>
+                <td class="heading">This example shows how to select points as input.</td>
+            </tr>
+            <tr>
+                <td class="heading"><a href="./examples/panels/">// PANELS</a></td>
+                <td class="heading">This example how to use numeric output to add more information in the UI.</td>
+            </tr>
+        </table>
+        <hr>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <h3 class="overlay">02 // FINAL PROJECT</h1>
+        <h4 class="overlay">A SERIES OF EXCERCISES THAT SHOWCASE THE RHINO.COMPUTE WORKFLOW AND HEROKU APP <br> SERVICES USING GRASSHOPPER DEFINITIONS CREATED DURING THE SEMINAR</h4>
+    
+        <hr>
+        </div>
+
+        <table>
+            <tr>
+                <td class="heading"><a href="./examples/gob_lunartent/">// LUNAR PICNIC</a></td>
+                <td class="heading">This example allows you to set up your Lunar tent using Kangaroo and Ladybug components.</td>
+            </tr>
+            <tr>
+                <td class="heading"><a href="./examples/gob_lunarc/">// LUNAR SPACE REDIDENCY</a></td>
+                <td class="heading">Create your lunar community using modular 3D printed components.</td>
+            </tr>
+            <tr>
+                <td class="heading"><a href="./examples/spikyThing/">// STRESS BALL</a></td>
+                <td class="heading">GH definition that uses SubD components to create a spiky ball. Output is returned as a b64 Draco compressed mesh and is decompressed with rhino3dm. <br> There is additional code in this sample that shows how to extract the timings for various aspects of the update cycle.</td>
+            </tr>
+            <tr>
+                <td class="heading"><a href="./examples/delaunay/">// DELAUNAY MESH</a></td>
+                <td class="heading">This example shows how to select points as input.</td>
+            </tr>
+            <tr>
+                <td class="heading"><a href="./examples/panels/">// PANELS</a></td>
+                <td class="heading">This example how to use numeric output to add more information in the UI.</td>
+            </tr>
+        </table>
+        <br />
+        <hr>
+        <h1>This is an example of several ways to embed content from other sources</h1>
+        <!-- We can embed content from another with several different html elements -->
+        <!-- Here is a decent comparison -->
+        <!-- https://stackoverflow.com/a/21115112/2179399 -->
+        <h2>iframe element</h2>
+        <iframe src="./examples/bendy/" width="500" height="500"></iframe>
+        <h2>iframe element</h2>
+        <iframe src="https://lunark.herokuapp.com/examples/panels/" width="500" height="500"></iframe>
+    </body>
+</html>
