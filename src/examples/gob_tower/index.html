@@ -16,8 +16,9 @@
             
             
             h1 {font-size: 900%; color: #f3f3f3;line-height: 0%;padding-bottom: 10%;margin-bottom: 00%;margin-top: 20%;}
-            h2 {font-size: 200%; color: rgb(255, 255, 255);line-height: 110%;padding: 0%;margin-bottom: 0%;}
-            h3 {font: size 200px; color: #bbbbbb;margin-bottom: 70%;margin-top: 0%;}
+            h2 {font-size: 200%; color: rgb(255, 255, 255);line-height: 0%;padding: 0%;margin-bottom: 0%;margin-top: 15%;}
+            h3 {font: size 200px; color: #bbbbbb;margin-bottom: 0%;margin-top: 2%;}
+            h4 {font-size: 120%; color: #ffffff;margin-bottom: 5%;margin-top: 10%;}
             
             label {color: #f3f3f3;}
 /*///////////////////////////////////////////////////////////////////////////*/
@@ -100,7 +101,8 @@
               <div><h2>TWISTED TOWER</h2></div>
               <div><h3>Create your own version of the famous twisted tower typoolgy and analyze it using Ladybug radiation component</h3></div>
               <div>
-                  <label for="LENGTH">+ LENGTH</label>
+                <div><h4>+ TOWER CONFIGURATION</h1></div>  
+                <label for="LENGTH">+ LENGTH</label>
                   <input type="range" id=LENGTH" min="10" max="100" value="50" step="1">
                   <label for="WIDTH">+ WIDTH</label>
                   <input type="range" id="WIDTH" min="10" max="100" value="30" step="1">
@@ -110,6 +112,28 @@
                   <input type="range" id="FLOORS" min="5" max="50" value="15" step="1">
                   <label for="ROTATION">+ ROTATION</label>
                   <input type="range" id="ROTATION" min="0" max="90" value="0" step="1">
+                  <label for="FACADE_POSITION">+ FACADE RECESS</label>
+                  <input type="range" id="FACADE_POSITION" min="0.8" max="1" value="0.9" step="0.1">
+                  
+                  <div><h4>+ RADIATION ANALYSIS</h1></div>
+
+                  <label for="RH_IN:run_analysis">+ RUN RADIATION ANALYSIS</label>
+                  <input type="checkbox" id="RH_IN:run_analysis" >
+                  <br />
+                  <br />
+
+                  <label for="MONTH">+ MONTH</label>
+                  <input type="range" id="MONTH" min="1" max="12" value="5" step="1">
+                  <label for="DAY">+ DAY</label>
+                  <input type="range" id="DAY" min="1" max="30" value="20" step="1">
+                  <label for="START_HOUR">+ START HOUR</label>
+                  <input type="range" id="START_HOUR" min="1" max="23" value="1" step="1">
+                  <label for="END_HOUR">+ END HOUR</label>
+                  <input type="range" id="END_HOUR" min="1" max="23" value="23" step="1">
+                  <label for="LEGEND">+ LEGEND</label>
+                  <input type="range" id="LEGEND" min="1" max="25" value="11" step="1">
+
+
               </div>
               <div class="buttongroup">
                 <a href="../index.html" >
