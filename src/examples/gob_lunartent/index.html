@@ -17,7 +17,8 @@
             
             h1 {font-size: 900%; color: #f3f3f3;line-height: 0%;padding-bottom: 10%;margin-bottom: 00%;margin-top: 20%;}
             h2 {font-size: 200%; color: rgb(255, 255, 255);line-height: 110%;padding: 0%;margin-bottom: 0%;}
-            h3 {font: size 200px; color: #bbbbbb;margin-bottom: 100%;margin-top: 0%;}
+            h3 {font: size 200px; color: #bbbbbb;margin-bottom: 50%;margin-top: 0%;}
+            h4 {font-size: 120%; color: #ffffff;margin-bottom: 5%;margin-top: 10%;}
             
             label {color: #f3f3f3;}
 /*///////////////////////////////////////////////////////////////////////////*/
@@ -97,6 +98,7 @@
               <div><h2>LUNARC PICNIC</h2></div>
               <div><h3>Create your lunar terrain, set up your space tent and analyze its performance coverage performance using Ladybug radiation analysis</h3></div>
               <div>
+                <div><h4>+ TOWER CONFIGURATION</h4></div>
                 <label for="ITERATIONS">+ ITERATIONS</label>
                 <input type="range" id="ITERATIONS" min="0" max="1000" value="900" step="1">
                 <label for="LENGTH">+ LENGTH</label>
@@ -109,6 +111,11 @@
                 <input type="range" id="LEGEND" min="1" max="25" value="22" step="1">
                 <label for="TERRAIN_SEED">+ TERRAIN GENERATOR</label>
                 <input type="range" id="TERRAIN_SEED" min="1" max="20" value="15" step="1">
+                <div><h4>+ RADIATION ANALYSIS</h4></div>
+                <label for="RH_IN:run_analysis">+ RUN RADIATION ANALYSIS</label>
+                  <input type="checkbox" id="RH_IN:run_analysis" >
+                  <br />
+                  <br />
                 <label for="SUN_POSITION">+ SUN POSITION</label>
                 <input type="range" id="SUN_POSITION" min="0" max="23" value="15" step="1">
               </div>
