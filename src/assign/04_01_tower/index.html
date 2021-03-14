@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="data:;base64,=">
+		<title>TWISTED TOWER</title>
+		<style>
+			body { 
+                margin: 0;
+                font-family: sans-serif;
+            }
+
+            input { width: 80%; }
+
+			/* CSS for a spinning animation */ 
+			#loader {
+                border: 5px solid #f3f3f3; /* Light grey */
+                border-top: 5px solid #3d3d3d; /* Grey */
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                animation: spin 1s linear infinite;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+
+		</style>
+	</head>
+	<body>
+        <div id="loader"></div>
+        <div>
+            <input type="range" id="RH_IN:length" name="RH_IN:length" min="10" max="100" value="40" step="1">
+            <label for="RH_IN:length">RH_IN:length</label>
+        </div>
+        <div>
+            <input type="range" id="RH_IN:width" name="RH_IN:width" min="10" max="100" value="27" step="1">
+            <label for="RH_IN:width">RH_IN:width</label>
+        </div>
+        <div>
+            <input type="range" id="RH_IN:floorheigth" name="RH_IN:floorheigth" min="3" max="8" value="5" step="0.1">
+            <label for="RH_IN:floorheigth">RH_IN:floorheigth</label>
+        </div>
+        <div>
+            <input type="range" id="RH_IN:floors" name="RH_IN:floors" min="7" max="30" value="14" step="1">
+            <label for="RH_IN:floors">RH_IN:floors</label>
+        </div>
+        <div>
+            <input type="range" id="RH_IN:rotation" name="RH_IN:rotation" min="0" max="90" value="0" step="1">
+            <label for="RH_IN:rotation">RH_IN:rotation</label>
+        </div>
+        <button id="downloadButton" disabled>Download</button>
+        <script type="module" src="./script.js"></script>
+	</body>
+</html>
