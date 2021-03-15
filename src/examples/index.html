@@ -7,6 +7,7 @@
         <meta charset="utf-8">
         <title>MACAD + BIMSC  //  DATA MANAGEMENT</title>
         <style>
+            A {text-decoration: none;} 
             body { 
                 font-family: monospace; 
                 background: rgba(97, 108, 131);
@@ -26,15 +27,21 @@
             h3 {font-size: 600%; color: #ffffff;line-height: 0%;padding-bottom: 20px;padding-left: 110px;margin: 0px;}
 
             h4 {font-size: 150%; color: #ffffff;line-height: 130%;padding-bottom: 10px;padding-left: 110px;}
+            h5 {font-size:35px; color: #ffffff;line-height: 100%;padding-bottom: 10px;padding-left: 20px;padding-right: 20px; padding-top: 10px;margin: 0px;
+                border: 1px solid rgb(255, 255, 255);
+                text-align: center;
+            }
+            h6 {font-size: 130%; color: #ffffff;line-height: 100%;padding-bottom: 5px;padding-left: 110px;padding-top: 5px;margin: 0px;padding-right: 0px;
+            }
 
-
-            table { border-left: 100px solid rgba(97, 108, 131); border-collapse: collapse; border-spacing: 100px;font-size: 110%;}
+            table {border-left: 100px solid rgba(97, 108, 131); border-collapse: collapse; border-spacing:100px;font-size: 110%;}
             table td {
                 border-left: 30px solid rgba(97, 108, 131);
                 padding: 10px;
             }
             table td:first-child { border-left: none; }
             
+            .heading {padding-top: 0pt;padding-bottom: 20px;font-size: 150%;color: white;}
             .heading:hover {
                 color: rgb(0, 0, 0);
             }
@@ -51,7 +58,7 @@
 
             
             .header {
-                height: 22cm;
+                height: 24cm;
                 padding: 0%;
                 background:rgb(255, 255, 255);
                 color: rgb(255, 255, 255);
@@ -61,10 +68,48 @@
                 background-position-x: center;
             }
 
+            .german {
+                size: 3px;
+                height: 5cm;
+                padding: 10%;
+                background-image: url(german.jpg);
+                background-repeat: no-repeat;
+                background-position-y: top;
+                background-position-x: center;
+            }
+
+            .iaac{
+                background-position: left;
+                background-size: 400px;
+                padding-top:100px;
+                padding-right: 200px;
+                background-image: url(iaac.png);
+                background-repeat: no-repeat;
+                padding-left: 200px;
+            }
+
             .gradient {
-                height: 10cm;
+                height: 7cm;
                 padding: 0%;
                 background-image: linear-gradient(rgb(255, 255, 255), rgb(97, 108, 131));
+            }
+
+            .reversegradient {
+                height: 7cm;
+                padding: 0%;
+                background-image: linear-gradient(rgb(97, 108, 131),rgb(255, 255, 255));
+            }
+
+            .space {
+                height: 7cm;
+                padding: 0%;
+                background-image: color rgb(97, 108, 131);
+            }
+
+            .whitespace {
+                height: 12cm;
+                padding: 0%;
+                background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
             }
 
             .side {
@@ -95,6 +140,11 @@
         </div>
         <div class="gradient"></div>
 
+        <br />
+        <br />
+        <br />
+        <br />
+
         <h3 class="overlay">01 // ASSINGMENTS</h1>
         <h4 class="overlay">COMPILATION OF EARLY EXCERCISES THAT SHOWS THE CONCEPTS OF HTML, JAVASCRIPT <br> AND CSS IMLEMENTED ON GITHUB PAGES AS WELL AS THE USE OF THREE JS LIBRARIES </h4>
 
@@ -103,36 +153,35 @@
 
         <table>
             <tr>
-                <td class="heading"><a href="./01_01_ubuntu/">A1 - 01  //  UBUNTU HTML PAGE</a></td>
-                <td class="heading">First seminar assignment where we learn how to create github pages and push HTML and Javascript code to create our very first website.</td>
+                <br />
+                <br />
+                <td class="heading"><a href="./01_01_ubuntu/"><h5>+A1-01  <br> HTML PAGE   </a></td>
+                <td class="heading">First seminar assignment where we learn how to create github pages and <br>push HTML and Javascript code to create our very first website.</td>
             </tr>
             <tr>
-                <td class="heading"><a href="./02_01_ubuntumodel/">A2 - 01  //  UBUNTU MODEL</a></td>
-                <td class="heading">Second seminar assignment where we learn to use the 3DM model loader from Three JS library.</td>
+                <td class="heading"><a href="./02_01_ubuntumodel/"><h5>+A2-01> <br>  RHINO MODEL   </h5</a></td>
+                <td class="heading">Second seminar assignment where we learn to use the 3DM model loader from <br>the Three JS library.</td>
             </tr>
             <tr>
-                <td class="heading"><a href="./02_02_gamemodel/">A2 - 02  //  MODEL VIEW AND ORBIT COMMANDS</a></td>
-                <td class="heading">Exploration on different ways to navigate 3D models. Example from Three JS website.</td>
+                <td class="heading"><a href="./02_02_gamemodel/"><h5>+A2-02  <br> VIEW COMMANDS   </h5></a></td>
+                <td class="heading">Exploration on different ways to navigate 3D models. Example from <br>the Three JS website.</td>
             </tr>
             <tr>
-                <td class="heading"><a href="./03_01_parametricbox/">A3 - 01  //  RHINO COMPUTE</a></td>
-                <td class="heading">Third assignment of the seminar where we explore the basics of Rhino.Compute and how to bring our own GH definitions to the cloud.</td>
+                <td class="heading"><a href="./03_01_parametricbox/"><h5>+A3-01  <br> RHINO COMPUTE</h5></a></td>
+                <td class="heading">Third assignment of the seminar where we explore the basics of Rhino.Compute <br>and how to bring our own GH definitions to the cloud.</td>
             </tr>
             <tr>
-                <td class="heading"><a href="./03_02_explodedvoronoi/">A3 - 02  //  VORONOI EXPLOSION</a></td>
+                <td class="heading"><a href="./03_02_explodedvoronoi/"><h5>+A3-02  <br> RHINO COMPUTE</h5></a></td>
                 <td class="heading">Further exploration of the Rhino.Compute server using GH definitions.</td>
             </tr>
         </table>
+        <br />
+        <br />
         <hr>
 
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <div class="space"></div>
 
-        <h3 class="overlay">02 // FINAL PROJECT</h1>
+        <h3 class="overlay">02 // FINAL PROJECT</h3>
         <h4 class="overlay">A SERIES OF EXCERCISES THAT SHOWCASE THE RHINO.COMPUTE WORKFLOW AND HEROKU APP <br> SERVICES USING GRASSHOPPER DEFINITIONS CREATED DURING THE SEMINAR</h4>
     
         <hr>
@@ -140,33 +189,56 @@
 
         <table>
             <tr>
-                <td class="heading"><a href="./gob_lunartent/">// LUNAR PICNIC</a></td>
+                <br />
+                <br />
+
+                <br />
+                <td class="heading"><a href="./gob_lunartent/"><h5>+FA 01  <br>LUNAR PICNIC   </a></td>
                 <td class="heading">This example allows you to set up your Lunar tent using Kangaroo and Ladybug components.</td>
             </tr>
             <tr>
-                <td class="heading"><a href="./gob_lunarc/">// LUNAR SPACE RESIDENCY</a></td>
-                <td class="heading">Create your lunar community using modular 3D printed components.</td>
+                <td class="heading"><a href="./gob_lunarc/"><h5>+FA 02 <br>  LUNAR SPACE RESIDENCY   </h5</a></td>
+                <td class="heading">Create your lunar community using modular 3D printed components</td>
             </tr>
             <tr>
-                <td class="heading"><a href="./gob_tower/">// PARAMETRIC TOWER</a></td>
-                <td class="heading">Create your own version of the famous twisted tower and analyze it using radiation components</td>
+                <td class="heading"><a href="./gob_tower/"><h5>+FA 03  <br> PARAMETRIC TOWER   </h5></a></td>
+                <td class="heading">Create your own version of the famous twisted tower and analyze it using radiation components.</td>
             </tr>
-            <tr>
-                <td class="heading"><a href="./spikyThing/">// STRESS BALL</a></td>
-                <td class="heading">GH definition that uses SubD components to create a spiky ball. Output is returned as a b64 Draco compressed mesh and is decompressed with rhino3dm. <br> There is additional code in this sample that shows how to extract the timings for various aspects of the update cycle.</td>
-            </tr>
-            <tr>
-                <td class="heading"><a href="./delaunay/">// DELAUNAY MESH</a></td>
-                <td class="heading">This example shows how to select points as input.</td>
-            </tr>
-            <tr>
-                <td class="heading"><a href="./panels/">// PANELS</a></td>
-                <td class="heading">This example how to use numeric output to add more information in the UI.</td>
-            </tr>            
         </table>
         <br />
+        <br />
+        <br />
         <hr>
-        <h1>This is an example of several ways to embed content from other sources</h1>
+
+        <div class="space"></div>
+
+        <h3 class="overlay">03 // CREDITS AND RESOURCES</h3>
+        <h4 class="overlay">ALL THE CONTENT SHOWED ON THIS WEBSITE WERE PRODUCE FOR THE DATA MANAGEMENT SEMINAR AT IAAC MASTER'S IN <br>
+            ADVANCE COMPUTATION FOR ARCHITECTURE AND DESIGN</h4>
+        
+        <h6>SENIOR FACULTY: LUIS FRAGUADA</h6>
+        <h6>SENIOR FACULTY: WILL PEARSON</h6>
+        <h6>STUDENT: GERMAN OTTO BODENBENDER</h6>
+        <h6>SOURCE CODE: https://github.com/germanbodenbender</h6>
+        <h6>APP: HEROKU APP SERVICES</h6>
+        <h6>SERVER: IAAC MACAD RHINO SERVER</h6>
+
+        
+        <br />
+        <br />
+        <br />
+
+        <div class="iaac"></div>
+
+        <div class="space"></div>
+
+        <div class="reversegradient"></div>
+
+        <div class="whitespace"></div>
+
+
+
+        <h1>WIP  //  TESTING ENBEDING THE OTHER ASSIGNMENTS</h1>
         <!-- We can embed content from another with several different html elements -->
         <!-- Here is a decent comparison -->
         <!-- https://stackoverflow.com/a/21115112/2179399 -->
