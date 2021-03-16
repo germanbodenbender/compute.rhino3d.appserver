@@ -16,7 +16,7 @@ $ cd compute.rhino3d.appserver
 ``` bash
 $ heroku login
 ```
-4. From the terminal, create the Heroku application (you can specify a name here, otherwise heroku will assign a name to your app):
+4. From the terminal, create the Heroku application (you can specify a name here, or otherwise heroku will assign a name to your app):
 ``` bash
 $ heroku create myappname
 ```

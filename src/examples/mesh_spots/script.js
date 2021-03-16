@@ -12,7 +12,7 @@ const lineBlackMaterial = new THREE.LineBasicMaterial( { color: 0x000000} )
 
 document.addEventListener( 'pointerdown', handleInteraction, false)
 
-// declare variables to store scene, camera, and renderer
+// declare  variables to store scene, camera, and renderer
 let scene, camera, renderer, mouse, raycaster, controls, tcontrols
 let terrainMesh, intersectables
 

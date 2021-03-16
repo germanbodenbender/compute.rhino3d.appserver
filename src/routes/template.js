@@ -12,7 +12,7 @@ const router = express.Router()
 const getParams = require('../definitions.js').getParams
 
 /**
- * Show list of available definitions
+ * Show list of  available definitions
  */
 router.get('/', (req, res) => {
   view = {

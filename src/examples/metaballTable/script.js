@@ -11,7 +11,7 @@ loader.setLibraryPath( 'https://cdn.jsdelivr.net/npm/rhino3dm@0.15.0-beta/' )
 
 const definition = 'metaballTable.gh'
 
-// setup input change events
+// setup input  change events
 const dimension_slider = document.getElementById( 'dimension' )
 dimension_slider.addEventListener( 'mouseup', onSliderChange, false )
 dimension_slider.addEventListener( 'touchend', onSliderChange, false )

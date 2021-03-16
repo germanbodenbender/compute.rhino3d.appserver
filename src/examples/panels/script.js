@@ -26,7 +26,7 @@ let _threeMesh, _threeMaterial, rhino
 
 rhino3dm().then(async m => {
   console.log('Loaded rhino3dm.')
-  rhino = m // global
+  rhino = m //  global
 
   init()
   compute()

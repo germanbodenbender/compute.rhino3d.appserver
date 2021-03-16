@@ -7,7 +7,7 @@ const cors = require('cors')
 // create express web server app
 const app = express()
 
-// log requests to the terminal when running in a local debug setup
+// log requests to  the terminal when running in a local debug setup
 if(process.env.NODE_ENV !== 'production')
   app.use(logger('dev'))
 

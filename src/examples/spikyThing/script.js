@@ -17,7 +17,7 @@ const length_slider = document.getElementById( 'length' )
 length_slider.addEventListener( 'mouseup', onSliderChange, false )
 length_slider.addEventListener( 'touchend', onSliderChange, false )
 
-// load the rhino3dm library
+// load the  rhino3dm library
 let rhino
 rhino3dm().then(async m => {
   console.log('Loaded rhino3dm.')

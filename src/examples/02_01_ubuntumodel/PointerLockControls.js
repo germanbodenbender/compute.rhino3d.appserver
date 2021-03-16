@@ -16,7 +16,7 @@ var PointerLockControls = function ( camera, domElement ) {
 	this.domElement = domElement;
 	this.isLocked = false;
 
-	// Set to constrain the pitch of the camera
+	// Set to constrain the pitch of the  camera
 	// Range is 0 to Math.PI radians
 	this.minPolarAngle = 0; // radians
 	this.maxPolarAngle = Math.PI; // radians

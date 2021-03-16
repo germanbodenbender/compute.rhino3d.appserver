@@ -5,7 +5,7 @@
  * 
  * Routes:
  *  ('/')
- *     Show list of definitions available
+ *     Show list of  definitions available
  *  ('/:definition')
  *     Get definition input/output details for a definition installed in
  *     this AppServer. These definitions are located in the 'files' directory

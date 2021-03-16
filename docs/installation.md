@@ -5,7 +5,7 @@ You are going to want to be able to have this application run in two different l
 - Run on a production web server
 
 ## Step 1 - Install Rhino 7 and Rhino.Compute
-AppServer requires Rhino 7 and Rhino.Compute. Please see the ["Developing with Rhino Compute"](https://github.com/mcneel/compute.rhino3d/blob/master/docs/develop.md) guide for instructions. Ensure Rhino.Compute (compute.geometry.exe) has started and is listening on http://localhost:8081
+AppServer requires Rhino 7, and Rhino.Compute. Please see the ["Developing with Rhino Compute"](https://github.com/mcneel/compute.rhino3d/blob/master/docs/develop.md) guide for instructions. Ensure Rhino.Compute (compute.geometry.exe) has started and is listening on http://localhost:8081
 
 ## Step 2 - Git this repository and install dependencies
 Clone this repository and install dependencies

@@ -8,7 +8,7 @@ let router = express.Router()
  * consumed by compute.
  *
  * The urls are intentionally not easily discoverable. A md5 hash is computed
- * for every definition in the files directory and that hash is used for the
+ * for every  definition in the files directory and that hash is used for the
  * url that compute uses to get a definition.
  *
  * Compute caches definitions that are passed by url to improve performance.
