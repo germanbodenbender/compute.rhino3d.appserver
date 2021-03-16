@@ -42,7 +42,7 @@ async function getParams(definitionUrl) {
 
   const response = await compute.computeFetch('io', { 'pointer': definitionUrl }, false)
   
-  // throw error if response not ok
+  // throw error  if response not ok
   if(!response.ok) {
     throw new Error(response.statusText)
   }
