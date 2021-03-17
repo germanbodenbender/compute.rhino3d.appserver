@@ -272,6 +272,22 @@ function init () {
 
   window.addEventListener( 'resize', onWindowResize, false )
 
+  scene.add( new THREE.AmbientLight( 0xf1e3c9, 2 ) )
+  const light = new THREE.DirectionalLight( 0xf1e3c9, 3 )
+  light.position.set( 200, 800, 300 )
+  light.position.multiplyScalar( 5000 )
+  light.castShadow = true;
+  light.shadow.mapSize.width = 1024;
+  light.shadow.mapSize.height = 1024;
+  const d = 500;
+  light.shadow.camera.left = - d;
+  light.shadow.camera.right = d;
+  light.shadow.camera.top = d;
+  light.shadow.camera.bottom = - d;
+  light.shadow.camera.far = 2000;
+  scene.add( light );
+
+
   animate()
 }
 
