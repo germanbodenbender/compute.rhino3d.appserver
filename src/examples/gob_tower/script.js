@@ -276,7 +276,7 @@ function init () {
   const light = new THREE.DirectionalLight( 0xf1e3c9, 3 )
   light.position.set( 200, 800, 300 )
   light.position.multiplyScalar( 5000 )
-  light.castShadow = true;
+  light.castShadow = false;
   light.shadow.mapSize.width = 1024;
   light.shadow.mapSize.height = 1024;
   const d = 500;
